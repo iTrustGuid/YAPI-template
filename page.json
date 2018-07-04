@@ -1,0 +1,98 @@
+{
+    "type": "object",
+    "properties":
+    {
+        "data":
+        {
+            "type": "object",
+            "properties":
+            {
+                "records":
+                {
+                    "type": "array",
+                    "items":
+                    {
+                        "type": "object",
+                        "properties":{}
+                    },
+                    "minItems": 10
+                },
+                "offset":
+                {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "位移值"
+                },
+                "limit":
+                {
+                    "type": "integer",
+                    "description": "最大个数限制"
+                },
+                "total":
+                {
+                    "type": "integer",
+                    "description": "总记录数",
+                    "minimum": 10,
+                    "maximum": 10000
+                },
+                "pages":
+                {
+                    "type": "integer",
+                    "description": "总页数"
+                },
+                "current":
+                {
+                    "type": "integer",
+                    "description": "当前页",
+                    "default": "1",
+                    "minimum": 1,
+                    "maximum": 1
+                },
+                "searchCount":
+                {
+                    "type": "number",
+                    "description": ""
+                },
+                "openSort":
+                {
+                    "type": "boolean",
+                    "description": "是否启用排序"
+                },
+                "optimizeCount":
+                {
+                    "type": "integer"
+                },
+                "orderByField":
+                {
+                    "type": "string",
+                    "description": "排序字段（例：name ASC 或 name DESC）"
+                }
+            },
+            "required": ["records", "offset", "limit", "total", "pages", "current", "searchCount", "openSort", "optimizeCount", "orderByField"]
+        },
+        "message":
+        {
+            "type": "string"
+        },
+        "status":
+        {
+            "type": "string",
+            "enum": ["200:请求成功 ", "207:频繁操作", "303:登录失败", "400:请求参数出错", "401:没有登录", "403:没有权限", "404:找不到页面", "408:请求超时", "409:发生冲突", "410:已被删除", "423:已被锁定", "500:服务器内部错误"]
+        },
+        "success":
+        {
+            "type": "boolean"
+        },
+        "token":
+        {
+            "type": "string"
+        },
+        "tokenInvalid":
+        {
+            "type": "boolean"
+        }
+    },
+    "$$ref": "#/definitions/RestResult",
+    "required": ["data", "message", "status", "success", "token", "tokenInvalid"]
+}
