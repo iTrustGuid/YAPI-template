@@ -1,0 +1,154 @@
+{
+    "type": "object",
+    "properties":
+    {
+        "data":
+        {
+            "type": "object",
+            "properties":
+            {
+                "records":
+                {
+                    "type": "array",
+                    "items":
+                    {
+                        "type": "object",
+                        "properties":
+                        {
+                            "barzjh":
+                            {
+                                "type": "string",
+                                "description": "备案人权利人证件号"
+                            },
+                            "basj":
+                            {
+                                "type": "string",
+                                "description": "备案时间"
+                            },
+                            "bdcdyh":
+                            {
+                                "type": "string",
+                                "description": "不动产单元号"
+                            },
+                            "bz":
+                            {
+                                "type": "string",
+                                "description": "备注"
+                            },
+                            "fdckfs":
+                            {
+                                "type": "string",
+                                "description": "房地产开发商"
+                            },
+                            "id":
+                            {
+                                "type": "string",
+                                "description": "记录ID"
+                            },
+                            "kfsdh":
+                            {
+                                "type": "string",
+                                "description": "开发商电话"
+                            },
+                            "name":
+                            {
+                                "type": "string",
+                                "description": "备案权利人姓名"
+                            },
+                            "qlrdh":
+                            {
+                                "type": "string",
+                                "description": "备案权利人电话"
+                            },
+                            "ysxkzh":
+                            {
+                                "type": "string",
+                                "description": "预售许可证号"
+                            },
+                            "yyzz":
+                            {
+                                "type": "string",
+                                "description": "营业执照"
+                            }
+                        },
+                        "required": ["barzjh", "basj", "bdcdyh", "bz", "fdckfs", "id", "kfsdh", "name", "qlrdh", "ysxkzh", "yyzz"]
+                    },
+                    "minItems": 10
+                },
+                "offset":
+                {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 10,
+                    "description": "位移值"
+                },
+                "limit":
+                {
+                    "type": "integer",
+                    "description": "最大个数限制"
+                },
+                "total":
+                {
+                    "type": "integer",
+                    "description": "总记录数",
+                    "minimum": 10
+                },
+                "pages":
+                {
+                    "type": "integer",
+                    "description": "总页数"
+                },
+                "current":
+                {
+                    "type": "integer",
+                    "description": "当前页",
+                    "default": "1",
+                    "minimum": 1
+                },
+                "searchCount":
+                {
+                    "type": "number",
+                    "description": ""
+                },
+                "openSort":
+                {
+                    "type": "boolean",
+                    "description": "是否启用排序"
+                },
+                "optimizeCount":
+                {
+                    "type": "integer"
+                },
+                "orderByField":
+                {
+                    "type": "string",
+                    "description": "排序字段（例：name ASC 或 name DESC）"
+                }
+            },
+            "required": ["records", "offset", "limit", "total", "pages", "current", "searchCount", "openSort", "optimizeCount", "orderByField"]
+        },
+        "message":
+        {
+            "type": "string"
+        },
+        "status":
+        {
+            "type": "string",
+            "enum": ["200:请求成功 ", "207:频繁操作", "303:登录失败", "400:请求参数出错", "401:没有登录", "403:没有权限", "404:找不到页面", "408:请求超时", "409:发生冲突", "410:已被删除", "423:已被锁定", "500:服务器内部错误"]
+        },
+        "success":
+        {
+            "type": "boolean"
+        },
+        "token":
+        {
+            "type": "string"
+        },
+        "tokenInvalid":
+        {
+            "type": "boolean"
+        }
+    },
+    "$$ref": "#/definitions/RestResult",
+    "required": ["data", "message", "status", "success", "token", "tokenInvalid"]
+}

@@ -1,0 +1,79 @@
+{
+    "bdcdyh":
+    {
+        "type": "string",
+        "description": "不动产单元号"
+    },
+    "qsblzt":
+    {
+        "type": "string",
+        "description": "权属办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "dyablzt":
+    {
+        "type": "string",
+        "description": "抵押办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "ygblzt":
+    {
+        "type": "string",
+        "description": "预告办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "ygdyblzt":
+    {
+        "type": "string",
+        "description": "预告抵押办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "cfblzt":
+    {
+        "type": "string",
+        "description": "查封办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "yyblzt":
+    {
+        "type": "string",
+        "description": "异议办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "dyiblzt":
+    {
+        "type": "string",
+        "description": "地役办理状态",
+        "enum": ["0:未办", "1:在办", "2:已办"]
+    },
+    "sfcf":
+    {
+        "type": "boolean",
+        "description": "是否查封"
+    },
+    "sfdya":
+    {
+        "type": "boolean",
+        "description": "是否抵押"
+    },
+    "sfyg":
+    {
+        "type": "boolean",
+        "description": "是否预告"
+    },
+    "sfygdy":
+    {
+        "type": "boolean",
+        "description": "是否预告抵押"
+    },
+    "sfyy":
+    {
+        "type": "boolean",
+        "description": "是否异议"
+    },
+    "sfdyi":
+    {
+        "type": "boolean",
+        "description": "是否地役"
+    }
+}

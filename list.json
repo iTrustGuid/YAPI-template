@@ -10,8 +10,38 @@
                 "type": "object",
                 "properties":
                 {
-                    
-                }
+                    "zmbh":
+                    {
+                        "type": "string",
+                        "description": "证明编号"
+                    },
+                    "qlrmc":
+                    {
+                        "type": "string",
+                        "description": "权利人名称"
+                    },
+                    "qlrzjh":
+                    {
+                        "type": "string",
+                        "description": "权利人证件号"
+                    },
+                    "fileid":
+                    {
+                        "type": "string",
+                        "description": "文件id（多个以','隔开）"
+                    },
+                    "fileurl":
+                    {
+                        "type": "string",
+                        "description": "文件地址（多个以','隔开）"
+                    },
+                    "id":
+                    {
+                        "type": "string",
+                        "description": "记录ID"
+                    }
+                },
+                "required": ["zmbh", "qlrmc", "qlrzjh", "fileid", "fileurl", "id"]
             },
             "minItems": 5
         },

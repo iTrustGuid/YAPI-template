@@ -1,0 +1,24 @@
+API规则：
+
+前缀：
+    获取：get
+    删除：delete
+    新增：add
+    修改：update
+    打印：print
+    上传：upload
+    下载：download
+    导出：export
+    导入：import
+    挂接：hook
+    统计：statistics
+    上报：report
+
+后缀：
+    列表：list
+    分页列表：pageList
+
+原则：
+1.新增接口统一返回新增的结果
+2.查询参数后面标注一下是精确还是模糊查询
+3.前端传入后台的时间统一时间戳

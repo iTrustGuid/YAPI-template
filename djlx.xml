@@ -1,0 +1,39 @@
+<Enum name="DJLX" description="登记类型取值说明">
+    <node value="01" caption="不动产权">
+        <node value="01" caption="首次登记">0101</node>
+        <node value="02" caption="转移登记">0102</node>
+        <node value="03" caption="变更登记">0103</node>
+        <node value="04" caption="注销登记">0104</node>
+        <node value="05" caption="更正登记">0105</node>
+        <node value="09" caption="其他登记">0109</node>
+    </node>
+    <node value="02" caption="预告登记">
+        <node value="01" caption="首次登记">0201</node>
+        <node value="02" caption="转移登记">0202</node>
+        <node value="04" caption="注销登记">0204</node>
+    </node>
+    <node value="03" caption="抵押权登记">
+        <node value="01" caption="首次登记">0301</node>
+        <node value="02" caption="转移登记">0302</node>
+        <node value="03" caption="变更登记">0303</node>
+        <node value="04" caption="注销登记">0304</node>
+        <node value="05" caption="更正登记">0305</node>
+        <node value="09" caption="其他登记">0309</node>
+    </node>
+    <node value="04" caption="查封登记">
+        <node value="01" caption="首次登记">0401</node>
+        <node value="04" caption="注销登记">0404</node>
+    </node>
+    <node value="05" caption="异议登记">
+        <node value="01" caption="首次登记">0501</node>
+        <node value="04" caption="注销登记">0504</node>
+    </node>
+    <node value="06" caption="地役登记">
+        <node value="01" caption="首次登记">0601</node>
+        <node value="02" caption="转移登记">0602</node>
+        <node value="03" caption="变更登记">0603</node>
+        <node value="04" caption="注销登记">0604</node>
+        <node value="05" caption="更正登记">0605</node>
+        <node value="09" caption="其他登记">0609</node>
+    </node>
+</Enum>

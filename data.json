@@ -2,10 +2,6 @@
     "type": "object",
     "properties":
     {
-        "data":
-        {
-         
-        },
         "message":
         {
             "type": "string"
@@ -30,5 +26,5 @@
         }
     },
     "$$ref": "#/definitions/RestResult",
-    "required": ["data", "message", "status", "success", "token", "tokenInvalid"]
+    "required": ["message", "status", "success", "token", "tokenInvalid"]
 }
